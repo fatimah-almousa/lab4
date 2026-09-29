@@ -1,0 +1,34 @@
+20 ?- consult']).:/Users/knono/OneDrive/سطح المكتب/iau/5th year/1st sem/Lab04_family_facts.pl
+true.
+
+21 ?- female(X).
+X = sara 
+Unknown action: C (h for help)
+Action? ;
+X = nora.
+
+22 ?- female(X).
+X = sara ;
+X = nora.
+
+22 ?- male(_).
+true ;
+true ;
+true ;
+true .
+
+23 ?- parent(X,Y), parent(Y,faisal).
+X = ali,
+Y = muhammad ;
+false.
+
+24 ?- parent(ahmad,X), female(X).
+X = sara ;
+X = nora ;
+false.
+
+25 ?- parent(X,ahmad), parent(X,muhammad).
+X = ali.
+
+26 ?- parent(X,khan), parent(X,nora), male(khan).
+X = ahmad.
